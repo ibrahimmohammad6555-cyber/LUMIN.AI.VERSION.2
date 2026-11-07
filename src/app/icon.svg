@@ -1,0 +1,95 @@
+<svg width="64" height="64" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    {/* Dark Glass Background with Rounded Border */}
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#0B132B" />
+      <stop offset="50%" stopColor="#0F172A" />
+      <stop offset="100%" stopColor="#030712" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#00E5FF" stopOpacity="0.8" />
+      <stop offset="40%" stopColor="#38BDF8" stopOpacity="0.3" />
+      <stop offset="70%" stopColor="#A855F7" stopOpacity="0.4" />
+      <stop offset="100%" stopColor="#EC4899" stopOpacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="stemGrad" x1="28" y1="18" x2="52" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8" />
+      <stop offset="40%" stopColor="#00D2FF" />
+      <stop offset="85%" stopColor="#0284C7" />
+      <stop offset="100%" stopColor="#6366F1" />
+    </linearGradient>
+    <linearGradient id="stemFacetGrad" x1="32" y1="18" x2="32" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#E0F2FE" stopOpacity="0.9" />
+      <stop offset="25%" stopColor="#38BDF8" stopOpacity="0.4" />
+      <stop offset="100%" stopColor="#0369A1" stopOpacity="0.1" />
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="25" y1="75" x2="96" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#3B82F6" />
+      <stop offset="30%" stopColor="#8B5CF6" />
+      <stop offset="70%" stopColor="#C026D3" />
+      <stop offset="100%" stopColor="#E879F9" />
+    </linearGradient>
+    <linearGradient id="bar1Grad" x1="56" y1="62" x2="56" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#67E8F9" />
+      <stop offset="100%" stopColor="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="bar2Grad" x1="68" y1="46" x2="68" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8" />
+      <stop offset="100%" stopColor="#0284C7" />
+    </linearGradient>
+    <linearGradient id="bar3Grad" x1="80" y1="30" x2="80" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#A5F3FC" />
+      <stop offset="50%" stopColor="#00E5FF" />
+      <stop offset="100%" stopColor="#0891B2" />
+    </linearGradient>
+    <linearGradient id="orbitalGrad" x1="12" y1="80" x2="104" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#00E5FF" stopOpacity="0" />
+      <stop offset="25%" stopColor="#00F0FF" stopOpacity="0.95" />
+      <stop offset="70%" stopColor="#38BDF8" stopOpacity="1" />
+      <stop offset="100%" stopColor="#67E8F9" stopOpacity="0" />
+    </linearGradient>
+    <radialGradient id="flareGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#FFFFFF" stopOpacity="1" />
+      <stop offset="35%" stopColor="#38BDF8" stopOpacity="0.8" />
+      <stop offset="100%" stopColor="#00E5FF" stopOpacity="0" />
+    </radialGradient>
+  </defs>
+
+  {/* Squircle App Icon Base */}
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#bgGrad)" />
+  <rect x="4" y="4" width="112" height="112" rx="28" stroke="url(#borderGrad)" strokeWidth="2.5" />
+
+  {/* Backlight Ambient Glow */}
+  <circle cx="60" cy="62" r="34" fill="#00D2FF" opacity="0.18" />
+  <circle cx="70" cy="84" r="24" fill="#C026D3" opacity="0.22" />
+
+  {/* Orbital Swoosh Back */}
+  <path d="M 18 80 C 14 68, 24 50, 55 42 C 80 38, 98 44, 102 54" stroke="url(#orbitalGrad)" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.4" />
+
+  {/* 3 Ascending Growth Bars */}
+  <rect x="52" y="60" width="8" height="19" rx="2" fill="url(#bar1Grad)" />
+  <rect x="52" y="60" width="8" height="3" rx="1.5" fill="#CFFAFE" opacity="0.75" />
+
+  <rect x="64" y="44" width="8" height="35" rx="2" fill="url(#bar2Grad)" />
+  <rect x="64" y="44" width="8" height="3" rx="1.5" fill="#E0F2FE" opacity="0.85" />
+
+  <rect x="76" y="28" width="8" height="51" rx="2" fill="url(#bar3Grad)" />
+  <rect x="76" y="28" width="8" height="3" rx="1.5" fill="#FFFFFF" opacity="0.95" />
+
+  {/* 3D Beveled 'L' */}
+  <path d="M 30 18 L 47 18 L 42 78 L 30 78 Z" fill="url(#stemGrad)" />
+  <path d="M 30 18 L 38 21 L 34 76 L 30 78 Z" fill="url(#stemFacetGrad)" />
+  <path d="M 47 18 L 44 23 L 39 77 L 42 78 Z" fill="#0369A1" opacity="0.6" />
+
+  <path d="M 28 73 L 44 73 L 94 73 C 96.5 73, 98 75.5, 96.8 77.8 L 90.5 89 C 89.6 90.6, 87.8 91.5, 86 91.5 L 34 91.5 C 30.5 91.5, 27.5 88.5, 27.5 85 L 28 73 Z" fill="url(#baseGrad)" />
+  <path d="M 28 73 L 94 73 L 91 76 L 31 76 Z" fill="#FFFFFF" opacity="0.35" />
+
+  {/* Orbital Swoosh Front */}
+  <path d="M 14 78 C 22 85, 38 88, 56 83 C 78 78, 94 65, 104 46" stroke="url(#orbitalGrad)" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+  <path d="M 16 78 C 24 84, 38 87, 56 83 C 76 78, 92 65, 102 48" stroke="#FFFFFF" strokeWidth="1" strokeLinecap="round" fill="none" opacity="0.9" />
+
+  {/* Sparkle */}
+  <circle cx="34" cy="20" r="10" fill="url(#flareGrad)" />
+  <path d="M 34 14 L 34 26 M 28 20 L 40 20" stroke="#FFFFFF" strokeWidth="1.4" strokeLinecap="round" />
+</svg>
